@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body, html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -20,8 +25,115 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* AboutUs.css */
+
+.about-us-container {
+  background-color: #f7fafc;
+}
+
+.icon-container {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-container:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  transition: transform 0.5s ease-in-out;
+}
+
+.animate-icon {
+  animation: iconAnimation 2s infinite;
+}
+
+@keyframes iconAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+h1, h3 {
+  color: #2b2b2b;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p {
+  color: #4a4a4a;
+  font-size: 1rem;
+}
+
+.feature-item {
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (min-width: 640px) {
+  .feature-item {
+    padding: 20px;
+  }
+}
+/* Services.css */
+
+.services-container {
+  background-color: #f7fafc;
+}
+
+.service-item {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-container:hover {
+  transform: translateY(-8px);
+}
+
+h3 {
+  color: #2b2b2b;
+}
+
+.service-item {
+  max-width: 240px;
+}
+
+@media (min-width: 640px) {
+  .service-item {
+    max-width: 280px;
   }
 }
