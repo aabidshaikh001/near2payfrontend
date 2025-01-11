@@ -47,12 +47,12 @@ export default function Home() {
   ];
   
   const partners = [
-    { src: "https://seeklogo.com/images/H/hdfc-bank-logo-A0A2CDE793-seeklogo.com.png", alt: "Partner 1" },
-    { src: "https://1000logos.net/wp-content/uploads/2018/03/SBI-Logo-1970.png", alt: "Partner 2" },
-    { src: "https://logos-download.com/wp-content/uploads/2016/06/Bank_of_Baroda_logo.png", alt: "Partner 3" },
-    { src: "https://anudip.org/wp-content/uploads/2024/08/Axis_Bank_logo.svg-768x200.png.webp", alt: "Partner 4" },
-    { src: "https://www.pocketful.in/blog/wp-content/uploads/2024/04/Kotak_Mahindra_Group_logo.svg-1024x306.png", alt: "Partner 5" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/ICICI_Bank_Logo.svg/2560px-ICICI_Bank_Logo.svg.png", alt: "Partner 6" },
+    { src: "/assets/hdfc.png", alt: "Partner 1" },
+    { src: "/assets/sbi.png", alt: "Partner 2" },
+    { src: "/assets/bob.png", alt: "Partner 3" },
+    { src: "/assets/axis.webp", alt: "Partner 4" },
+    { src: "/assets/kotak.png", alt: "Partner 5" },
+    { src: "/assets/icic.png", alt: "Partner 6" },
   ];
   const plans = [
     {
